@@ -30,19 +30,19 @@ public class LaptopFilter {
 
         switch (criterion) {
             case 1:
-                System.out.print("Введите минимальное значение ОЗУ (в ГБ): ");
+                System.out.print("Введите минимальное значение ОЗУ (8ГБ, 16ГБ, 32ГБ): ");
                 filters.put("ram", scanner.nextLine());
                 break;
             case 2:
-                System.out.print("Введите минимальное значение объема ЖД (в ГБ): ");
+                System.out.print("Введите минимальное значение объема ЖД (128ГБ, 256ГБ, 512ГБ, 1024ГБ): ");
                 filters.put("hdd", scanner.nextLine());
                 break;
             case 3:
-                System.out.print("Введите операционную систему: ");
+                System.out.print("Введите операционную систему (Windows, Linux, MacOS): ");
                 filters.put("os", scanner.nextLine());
                 break;
             case 4:
-                System.out.print("Введите цвет: ");
+                System.out.print("Введите цвет (Black, White, Gray, Blue): ");
                 filters.put("color", scanner.nextLine());
                 break;
             default:
